@@ -1,0 +1,68 @@
+.team-titule {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $button-bg-color;
+  & .list {
+    display: flex;
+    justify-content: space-between;
+  }
+  & .titule {
+    margin-bottom: 10px;
+    /* color */
+    color: $titule-text-color;
+    /* text */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+  & .profession {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+}
+
+.team-list-content {
+  padding-top: 30px;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-bottom: 16px;
+}
+
+.team-list-card {
+  width: 270px;
+  background-color: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.social-list {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+
+    &:hover .social-list-icon,
+    &:focus .social-list-icon {
+      fill: $primary-bg-color;
+    }
+  }
+  &-icon {
+    fill: $icon-bg-color;
+    width: 20px;
+    height: 20px;
+  }
+}

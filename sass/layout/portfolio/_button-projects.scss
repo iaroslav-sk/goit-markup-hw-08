@@ -1,0 +1,38 @@
+.section-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.projects-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  & .all {
+    color: $white-text-color;
+    background-color: $accent-color;
+  }
+  &-item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.projects-button {
+  height: 38px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  background: #f5f4fa;
+  border: 0px;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: $titule-text-color;
+  background-color: $button-bg-color;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white-text-color;
+    background-color: $accent-color;
+  }
+}

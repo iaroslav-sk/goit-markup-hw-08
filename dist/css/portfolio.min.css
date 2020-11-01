@@ -1,0 +1,55 @@
+:root {
+  --primary-text-color: #757575;
+  --titule-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --button-bg-color: #f5f4fa;
+  --mail-footer-color-text: rgba(255, 255, 255, 0.6);
+  --background-dark-color: #2f303a;
+  --icon-bg-color: #afb1b8;
+  --icon-bg-footer-color: rgba(255, 255, 255, 0.1);
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:hover,
+*:focus {
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=portfolio.min.css.map */

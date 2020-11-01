@@ -1,0 +1,101 @@
+/* ================header========================= */
+.header {
+  padding: 24px 0 25px;
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* ================logo=========================== */
+
+.logo {
+  /* position */
+  // margin-right: 93px;
+  /* color */
+  color: $accent-color;
+  /* text */
+  font-family: Raleway, cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  & .studio {
+    color: $titule-text-color;
+  }
+}
+/* ================navigate=========================== */
+.site-nav {
+  display: flex;
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  & .link {
+    /* color */
+    color: $titule-text-color;
+    /* text */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &.current {
+      position: relative;
+      color: $accent-color;
+    }
+    &.current::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      transform: translateY(30px);
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+/* ==================contacts========================= */
+.address-header {
+  margin-left: auto;
+}
+
+.icon-mail,
+.icon-phone {
+  fill: $primary-text-color;
+  margin-right: 10px;
+}
+
+.contact {
+  color: $primary-text-color;
+  /* text */
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $accent-color;
+  }
+  &:hover .icon-mail,
+  &:hover .icon-phone,
+  &:focus .icon-mail,
+  &:focus .icon-phone {
+    fill: $accent-color;
+  }
+}

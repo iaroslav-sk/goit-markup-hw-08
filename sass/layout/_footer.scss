@@ -1,0 +1,206 @@
+.footer {
+  padding-bottom: 60px;
+  background-color: $background-dark-color;
+  & .container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  & .address {
+    padding-top: 20px;
+    padding-bottom: 9px;
+    /* color */
+    color: $white-text-color;
+    /* text */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  &-logo {
+    display: block;
+    margin-top: 60px;
+    &-studio {
+      color: $white-text-color;
+    }
+  }
+}
+
+.mail-list .list-item:not(:last-child) {
+  padding-bottom: 9px;
+}
+.mail-footer {
+  /* color */
+  color: $mail-footer-color-text;
+  /* text */
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-social-list {
+  display: flex;
+  padding-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  &-titule {
+    display: flex;
+    justify-content: start;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: $white-text-color;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-top: 72px;
+      .footer-sign-input & {
+        margin-left: 93px;
+      }
+    }
+    margin-top: 60px;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: $icon-bg-footer-color;
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+  &-icon {
+    fill: $white-text-color;
+    width: 20px;
+    height: 20px;
+    .footer-social-list-link:hover & {
+      fill: $primary-bg-color;
+    }
+  }
+}
+/* ---------------footer-input-------------- */
+.footer-input {
+  @media screen and (min-width: 1200px) {
+    width: 380px;
+  }
+  width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  resize: none;
+  & input::placeholder {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:not(:placeholder-shown) {
+    color: $white-text-color;
+  }
+  &-position-box {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      text-align: center;
+      margin-left: 93px;
+    }
+
+    margin-top: 20px;
+  }
+}
+.footer-sign-button {
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    padding: 14px 29px;
+  }
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* text */
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  color: $white-text-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  &-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $primary-bg-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    & .left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    & .join {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-sign-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    & .left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 165px;
+    }
+    & .join {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-sign-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
