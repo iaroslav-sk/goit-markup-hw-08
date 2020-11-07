@@ -1,7 +1,6 @@
 /* ================header========================= */
 .header {
   position: relative;
-  padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -13,11 +12,15 @@
   /* color */
   color: $accent-color;
   /* text */
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
   font-family: Raleway, cursive;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
   & .studio {
@@ -55,12 +58,14 @@
       width: 100%;
       background-color: $primary-bg-color;
       padding-bottom: 60px;
+      z-index: 999;
       @media screen and (max-width: 767px) {
         & {
           display: none;
         }
       }
     }
+
     .mobile-menu.is-open {
       display: block;
     }
@@ -72,28 +77,58 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .navigation {
-    display: flex;
-    align-items: center;
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  @media screen and (max-width: 767px) {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 .site-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
   &-item:not(:last-child) {
-    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+    }
   }
   & .link {
     /* color */
     color: $titule-text-color;
     /* text */
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.16px;
+    }
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -108,6 +143,9 @@
     &.current::after {
       position: absolute;
       content: "";
+      @media screen and (min-width: 768px) {
+        bottom: -24px;
+      }
       bottom: 0;
       transform: translateY(8px);
       display: block;
@@ -120,29 +158,54 @@
 }
 /* ==================contacts========================= */
 .address-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .icon-mail,
 .icon-phone {
   fill: $primary-text-color;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
   margin-right: 10px;
 }
 
 .contact {
   color: $primary-text-color;
   /* text */
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.16px;
+  }
   font-style: normal;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   &:not(:last-child) {
-    margin-bottom: 16px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
   &:hover,
   &:active,

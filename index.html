@@ -129,35 +129,75 @@
           <ul class="list">
             <li>
               <div class="workexample-content-box">
-                <img
-                  src="./images/workexample/example1.jpg"
-                  alt="работающий програмист"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <!-- Desctop -->
+                  <source
+                    srcset="
+                      ./images/workexample/img-1-x1-webp-des.webp 1x,
+                      /images/workexample/img-1-x2-webp-des.webp  2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/workexample/img-1-x1-des.jpg 1x,
+                      /images/workexample/img-1-x2-des.jpg  2x
+                    "
+                    media="(min-width: 1200px)" />
+
+                  <img
+                    src="./images/workexample/img-1-x1-des.jpg"
+                    alt="работающий програмист"
+                /></picture>
                 <p class="workexample-content">Десктопные приложения</p>
               </div>
             </li>
             <li>
               <div class="workexample-content-box">
-                <img
-                  src="./images/workexample/example2.jpg"
-                  alt="веб дизайнер в работе"
-                  width="370"
-                  height="294"
-                />
+                <!-- Desctop -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/workexample/img-2-x1-webp-des.webp 1x,
+                      /images/workexample/img-2-x2-webp-des.webp  2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/workexample/img-2-x1-des.jpg 1x,
+                      /images/workexample/img-2-x2-des.jpg  2x
+                    "
+                    media="(min-width: 1200px)" />
+
+                  <img
+                    src="./images/workexample/img-2-x1-des.jpg"
+                    alt="веб дизайнер в работе"
+                /></picture>
                 <p class="workexample-content">Мобильные приложения</p>
               </div>
             </li>
 
             <li>
               <div class="workexample-content-box">
-                <img
-                  src="./images/workexample/example3.jpg"
-                  alt="креативный дизайнер работает на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/workexample/img-3-x1-webp-des.webp 1x,
+                      /images/workexample/img-3-x2-webp-des.webp  2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/workexample/img-3-x1-des.jpg 1x,
+                      /images/workexample/img-3-x2-des.jpg  2x
+                    "
+                    media="(min-width: 1200px)" />
+
+                  <img src="./images/workexample/img-3-x1-des.jpg"
+                /></picture>
+
                 <p class="workexample-content">Дизайнерские решения</p>
               </div>
             </li>
@@ -171,12 +211,60 @@
           <ul class="list team-list">
             <li class="team-list-card">
               <picture>
-                <source srcset="" media="" />
+                <!-- Desctop -->
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-desctop1x.webp 1x,
+                    /images/comand_photos/ihor_demyanenko-desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-desctop1x.jpg 1x,
+                    /images/comand_photos/ihor_demyanenko-desctop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-tablet1x.webp 1x,
+                    /images/comand_photos/ihor_demyanenko-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-tablet1x.jpg 1x,
+                    /images/comand_photos/ihor_demyanenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-phone1x.webp 1x,
+                    /images/comand_photos/ihor_demyanenko-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-phone1x.jpg 1x,
+                    /images/comand_photos/ihor_demyanenko-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
                 <img
-                  src="./images/comand_photos/ihor_demyanenko.jpg"
+                  src="./images/comand_photos/ihor_demyanenko-phone1x.jpg"
                   alt="фото Игоря Демьяненко"
-                  width="270"
-                  height="260"
                 />
               </picture>
 
@@ -220,12 +308,55 @@
               </ul>
             </li>
             <li class="team-list-card">
-              <img
-                src="./images/comand_photos/olha_repyna.jpg"
-                alt="фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-desctop1x.webp 1x,
+                    /images/comand_photos/olha_repyna-desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-desctop1x.jpg 1x,
+                    /images/comand_photos/olha_repyna-desctop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-tablet1x.webp 1x,
+                    /images/comand_photos/olha_repyna-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-tablet1x.jpg 1x,
+                    /images/comand_photos/olha_repyna-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-phone1x.webp 1x,
+                    /images/comand_photos/olha_repyna-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-phone1x.jpg 1x,
+                    /images/comand_photos/olha_repyna-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/comand_photos/olha_repyna-phone1x.jpg"
+                  alt="фото Ольги Репиной"
+              /></picture>
               <div class="team-list-content">
                 <h3 class="titule">Ольга Репина</h3>
                 <p class="profession">Frontend Developer</p>
@@ -267,12 +398,55 @@
             </li>
 
             <li class="team-list-card">
-              <img
-                src="./images/comand_photos/nikolay_tarasov.jpg"
-                alt="фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-desctop1x.webp 1x,
+                    /images/comand_photos/nikolay_tarasov-desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-desctop1x.jpg 1x,
+                    /images/comand_photos/nikolay_tarasov-desctop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-tablet1x.webp 1x,
+                    /images/comand_photos/nikolay_tarasov-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-tablet1x.jpg 1x,
+                    /images/comand_photos/nikolay_tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-phone1x.webp 1x,
+                    /images/comand_photos/nikolay_tarasov-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-phone1x.jpg 1x,
+                    /images/comand_photos/nikolay_tarasov-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/comand_photos/nikolay_tarasov-phone1x.jpg"
+                  alt="фото Николая Тарасова"
+              /></picture>
               <div class="team-list-content">
                 <h3 class="titule">Николай Тарасов</h3>
                 <p class="profession">Marketing</p>
@@ -314,12 +488,55 @@
             </li>
 
             <li class="team-list-card">
-              <img
-                src="./images/comand_photos/michail_ermacov.jpg"
-                alt="фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Desctop -->
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-desctop1x.webp 1x,
+                    /images/comand_photos/michail_ermacov-desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-desctop1x.jpg 1x,
+                    /images/comand_photos/michail_ermacov-desctop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+
+                <!-- Tablet -->
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-tablet1x.webp 1x,
+                    /images/comand_photos/michail_ermacov-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-tablet1x.jpg 1x,
+                    /images/comand_photos/michail_ermacov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-phone1x.webp 1x,
+                    /images/comand_photos/michail_ermacov-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-phone1x.jpg 1x,
+                    /images/comand_photos/michail_ermacov-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/comand_photos/michail_ermacov-phone1x.jpg"
+                  alt="фото Михаила Ермакова"
+              /></picture>
               <div class="team-list-content">
                 <h3 class="titule">Михаил Ермаков</h3>
                 <p class="profession">UI Designer</p>
