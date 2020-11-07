@@ -56,6 +56,7 @@ button:focus {
 }
 
 .container {
+  border: 1px solid red;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -488,6 +489,12 @@ button:focus {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list .titule {
+    text-align: start;
+  }
 }
 
 .features-list .text {
@@ -971,6 +978,7 @@ button:focus {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
+  border: none;
 }
 
 @media screen and (max-width: 1199px) {
