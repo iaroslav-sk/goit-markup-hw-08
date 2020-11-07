@@ -131,24 +131,25 @@
               <div class="workexample-content-box">
                 <picture>
                   <!-- Desctop -->
-
-                  <source
-                    srcset="
-                      ./images/workexample/img-1-x1-des.jpg 1x,
-                      /images/workexample/img-1-x2-des.jpg  2x
-                    "
-                    media="(min-width: 1200px)" />
                   <source
                     srcset="
                       ./images/workexample/img-1-x1-webp-des.webp 1x,
                       /images/workexample/img-1-x2-webp-des.webp  2x
                     "
                     type="image/webp"
-                    media="(min-width: 1200px)" />
+                  />
+
+                  <source
+                    srcset="
+                      ./images/workexample/img-1-x1-des.jpg 1x,
+                      /images/workexample/img-1-x2-des.jpg  2x
+                    "
+                  />
                   <img
                     src="./images/workexample/img-1-x1-des.jpg"
                     alt="работающий програмист"
-                /></picture>
+                  />
+                </picture>
                 <p class="workexample-content">Десктопные приложения</p>
               </div>
             </li>
@@ -158,18 +159,16 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/workexample/img-2-x1-des.jpg 1x,
-                      /images/workexample/img-2-x2-des.jpg  2x
-                    "
-                    media="(min-width: 1200px)" />
-
-                  <source
-                    srcset="
                       ./images/workexample/img-2-x1-webp-des.webp 1x,
                       /images/workexample/img-2-x2-webp-des.webp  2x
                     "
-                    type="image/webp"
-                    media="(min-width: 1200px)" />
+                    type="image/webp" />
+                  <source
+                    srcset="
+                      ./images/workexample/img-2-x1-des.jpg 1x,
+                      /images/workexample/img-2-x2-des.jpg  2x
+                    " />
+
                   <img
                     src="./images/workexample/img-2-x1-des.jpg"
                     alt="веб дизайнер в работе"
@@ -183,17 +182,15 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/workexample/img-3-x1-des.jpg 1x,
-                      /images/workexample/img-3-x2-des.jpg  2x
-                    "
-                    media="(min-width: 1200px)" />
-                  <source
-                    srcset="
                       ./images/workexample/img-3-x1-webp-des.webp 1x,
                       /images/workexample/img-3-x2-webp-des.webp  2x
                     "
-                    type="image/webp"
-                    media="(min-width: 1200px)" />
+                    type="image/webp" />
+                  <source
+                    srcset="
+                      ./images/workexample/img-3-x1-des.jpg 1x,
+                      /images/workexample/img-3-x2-des.jpg  2x
+                    " />
 
                   <img src="./images/workexample/img-3-x1-des.jpg"
                 /></picture>
@@ -211,6 +208,23 @@
           <ul class="list team-list">
             <li class="team-list-card">
               <picture>
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-phone1x.jpg 1x,
+                    /images/comand_photos/ihor_demyanenko-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/comand_photos/ihor_demyanenko-phone1x.webp 1x,
+                    /images/comand_photos/ihor_demyanenko-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
                 <!-- Desctop -->
                 <source
                   srcset="
@@ -227,7 +241,6 @@
                   type="image/webp"
                   media="(min-width: 1200px)"
                 />
-
                 <!-- Tablet -->
                 <source
                   srcset="
@@ -243,24 +256,6 @@
                   "
                   type="image/webp"
                   media="(min-width: 768px)"
-                />
-
-                <!-- Mobile -->
-                <source
-                  srcset="
-                    ./images/comand_photos/ihor_demyanenko-phone1x.jpg 1x,
-                    /images/comand_photos/ihor_demyanenko-phone@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/comand_photos/ihor_demyanenko-phone1x.webp 1x,
-                    /images/comand_photos/ihor_demyanenko-phone@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/comand_photos/ihor_demyanenko-phone1x.jpg"
@@ -309,6 +304,20 @@
             </li>
             <li class="team-list-card">
               <picture>
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-phone1x.jpg 1x,
+                    /images/comand_photos/olha_repyna-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/olha_repyna-phone1x.webp 1x,
+                    /images/comand_photos/olha_repyna-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
                 <!-- Desctop -->
                 <source
                   srcset="
@@ -323,7 +332,6 @@
                   "
                   type="image/webp"
                   media="(min-width: 1200px)" />
-
                 <!-- Tablet -->
                 <source
                   srcset="
@@ -339,20 +347,6 @@
                   type="image/webp"
                   media="(min-width: 768px)" />
 
-                <!-- Mobile -->
-                <source
-                  srcset="
-                    ./images/comand_photos/olha_repyna-phone1x.jpg 1x,
-                    /images/comand_photos/olha_repyna-phone@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)" />
-                <source
-                  srcset="
-                    ./images/comand_photos/olha_repyna-phone1x.webp 1x,
-                    /images/comand_photos/olha_repyna-phone@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)" />
                 <img
                   src="./images/comand_photos/olha_repyna-phone1x.jpg"
                   alt="фото Ольги Репиной"
@@ -399,6 +393,20 @@
 
             <li class="team-list-card">
               <picture>
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-phone1x.jpg 1x,
+                    /images/comand_photos/nikolay_tarasov-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/nikolay_tarasov-phone1x.webp 1x,
+                    /images/comand_photos/nikolay_tarasov-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
                 <!-- Desctop -->
                 <source
                   srcset="
@@ -406,7 +414,6 @@
                     /images/comand_photos/nikolay_tarasov-desctop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)" />
-
                 <source
                   srcset="
                     ./images/comand_photos/nikolay_tarasov-desctop1x.webp 1x,
@@ -429,20 +436,6 @@
                   type="image/webp"
                   media="(min-width: 768px)" />
 
-                <!-- Mobile -->
-                <source
-                  srcset="
-                    ./images/comand_photos/nikolay_tarasov-phone1x.jpg 1x,
-                    /images/comand_photos/nikolay_tarasov-phone@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)" />
-                <source
-                  srcset="
-                    ./images/comand_photos/nikolay_tarasov-phone1x.webp 1x,
-                    /images/comand_photos/nikolay_tarasov-phone@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)" />
                 <img
                   src="./images/comand_photos/nikolay_tarasov-phone1x.jpg"
                   alt="фото Николая Тарасова"
@@ -489,6 +482,20 @@
 
             <li class="team-list-card">
               <picture>
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-phone1x.jpg 1x,
+                    /images/comand_photos/michail_ermacov-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/comand_photos/michail_ermacov-phone1x.webp 1x,
+                    /images/comand_photos/michail_ermacov-phone@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
                 <!-- Desctop -->
                 <source
                   srcset="
@@ -503,7 +510,6 @@
                   "
                   type="image/webp"
                   media="(min-width: 1200px)" />
-
                 <!-- Tablet -->
                 <source
                   srcset="
@@ -519,20 +525,6 @@
                   type="image/webp"
                   media="(min-width: 768px)" />
 
-                <!-- Mobile -->
-                <source
-                  srcset="
-                    ./images/comand_photos/michail_ermacov-phone1x.jpg 1x,
-                    /images/comand_photos/michail_ermacov-phone@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)" />
-                <source
-                  srcset="
-                    ./images/comand_photos/michail_ermacov-phone1x.webp 1x,
-                    /images/comand_photos/michail_ermacov-phone@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 767px)" />
                 <img
                   src="./images/comand_photos/michail_ermacov-phone1x.jpg"
                   alt="фото Михаила Ермакова"
