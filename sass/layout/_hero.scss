@@ -16,7 +16,7 @@
   }
 }
 
-// вставить изображение для мобильного
+// изображения для мобильного
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -66,7 +66,7 @@
       url("../images/hero-bg/hero-bg-mobile-x2.webp");
   }
 }
-// вставить изображения для планшета
+//  изображения для планшета
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     background-image: linear-gradient(
@@ -116,7 +116,7 @@
       url("../images/hero-bg/hero-bg-tablet@2x.webp");
   }
 }
-// Вставить изображение десктопа
+// изображения десктопа
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
